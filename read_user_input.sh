@@ -1,23 +1,27 @@
 #!/bin/bash
+#this program takes the user input
 
-#program to read a user input
+#taking single name as an input
+echo ">>>To take a single input from the user<<<"
+echo "Enter  ur name: "
+read name
+echo Entered name: $name
+#taking multiple input from user
+echo ">>>To take the multiple input from the user<<<"
+echo "Enter names: "
+read name1 name2 name3
+echo Entered names : $name1 $name2 $name3
 
-echo "enter a number: "
-#read is used to read a value
-read number
-echo  Entered Number: $number
+#to take the input in the same line, we use -p option
+echo ">>>Take input in the same line<<<"
 
-#the following syntax is used to read the input in the same line
-read -p "username: " username
-echo username: $username
+read -p "Enter Username: " username
+echo Entered name: $username
 
-#to make the password  invisible while typing
-read -ps "type ur password: " password
-echo password $password
 
-#taking user-input into an array
-read -a name_array
-echo "name_array: ${name_array[0],$name_array[1]}"
+echo ">>>Take silent input from the user<<<"
+read -sp "Password: " Password
+echo "Entered Password: $Password"
 
 
 

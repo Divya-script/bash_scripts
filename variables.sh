@@ -1,29 +1,18 @@
-#! /bin/bash
+#!/bin/bash
+# a variable is used to store some value(s) or string.
+# a defined variable is called by putting a dollar($) symbol 
+# before the defined variable
+# there are two types of variables i.e. inbuilt or predefined variable and
+# user-defined variable
 
-#variables: containers that stores some value(s)
-#Two types of variables: System_Variables & User_Defined_Variables
-
-#System_Variables
-echo BASH: $BASH
-echo BASH_Version: $BASH_VERSION
-echo HOME: $HOME
-echo REPLY: $REPLY
-echo PWD: $PWD
-
-#User_Defined_Variables
-
-#here "name" is a variable
-name="Sherlock"
-gender="male"
-residence=221_Baker_Street
-country="USA"
-citizenship="American"
-
-#printing above data
-echo $name
-echo $gender
-echo $residence
-echo $country
-echo $citizenship
-ps
-
+#predefined variables
+echo "Predefined Variables: "
+echo $HOME
+echo $BASH
+echo $BASH_VERSION
+echo $PWD
+echo "User-Defined Variables: "
+demo="this is a demo exercise"
+echo $demo
+sample=54216431
+echo $sample
